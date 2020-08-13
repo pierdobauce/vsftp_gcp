@@ -85,7 +85,7 @@ jobs:
          name: Connecting to my own insecure registry
          command: |
            #docker image list
-           docker login -u pierdo -p pierd0 pierd0bauce.ddns.net:5000
+           docker login -u pierdo -p pierd0 pierdobauce.ddns.net:5000
            #docker image tag extract pierdobauce.ddns.net:5000/extract
            #docker push pierdobauce.ddns.net:5000/extract
  
