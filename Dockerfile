@@ -20,7 +20,7 @@ RUN echo "local_enable=YES" >> /etc/vsftpd/vsftpd.conf \
   && echo 'pasv_max_port=31101' >> /etc/vsftpd/vsftpd.conf \
   && echo 'pasv_min_port=31100' >> /etc/vsftpd/vsftpd.conf \
 #  && echo 'pasv_address=192.168.1.104' >> /etc/vsftpd/vsftpd.conf \
-  && sed -i "s/anonymous_enable=YES/anonymous_enable=NO/" /etc/vsftpd/vsftpd.conf
+  && sed -i "s/anonymous_enable=YES/anonymous_enable=NO/" /etc/vsftpd/vsftpd.conf \
   && sed -i "s/connect_from_port_20=YES/connect_from_port_20=NO/" /etc/vsftpd/vsftpd.conf
 
 ADD docker-entrypoint.sh /
